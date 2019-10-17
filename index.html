@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Joker Light jQuery</title>
+</head>
+
+<body>
+    <section>
+        <div class="light">
+
+        </div>
+        <h2>Crush Disha Patani </h2>
+        <p>Disha Patani is an Indian actress who works primarily in Hindi films. She began her acting career with the
+            Telugu film Loafer, opposite Varun Tej. After making her Bollywood debut in the sports biopic</p>
+        <img src="img/joker.jpg" alt="">
+    </section>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).mousemove(function (e) {
+            var X = e.pageX;
+            var Y = e.pageY;
+
+            $('.light').css('background', 'radial-gradient(circle at ' + X + 'px ' + Y + 'px,transparent,#000 25%)');
+        })
+    </script>
+</body>
+
+</html>
